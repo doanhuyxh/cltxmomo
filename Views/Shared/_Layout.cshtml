@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="vi">
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title> CLMM.FUN - | CLZL | Chẳn Lẻ momo Uy Tín CLMM.FUN - Giao Dịch 24/7 - Thanh Toán 5s</title>
+    <link rel="icon" href="/logo.png" type="image/png">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="CLZL.WIN -  | CLZL |  Chẳn Lẻ ZaloPay Uy Tín  CLMM.FUN - Giao Dịch 24/7 - Thanh Toán 5s"
+          name="title">
+    <meta content="Chào mừng bạn đã đến với hệ thống game chẵn lẻ Zalopay TOP 1 Việt Nam.  CLMM.FUN cam kết chất lượng dịch vụ và độ uy tín luôn dẫn đầu thị trường."
+          name="description">
+    <meta content="ZALO, ZALOPAY, CHẴN LẺ ZALO. CHẴN LẺ ZALOPAY , clmm, clmm 1k, chanlemomo, clmm 5k,clmm, clmm 24/7, sever clmm, web clmm 1k"
+          name="keywords">
+    <meta content="/" property="og:url" />
+    <meta content="article" property="og:type" />
+    <meta content="CLZL.WIN -  | CLZL |  Chẳn Lẻ ZaloPay Uy Tín  CLMM.FUN - Giao Dịch 24/7 - Thanh Toán 5s"
+          property="og:title" />
+    <meta content="Chào mừng bạn đã đến với hệ thống game chẵn lẻ Zalopay TOP 1 Việt Nam. CLZL.WIN cam kết chất lượng dịch vụ và độ uy tín luôn dẫn đầu thị trường."
+          property="og:description" />
+
+
+    <meta content="themes/Gjsz4g7.jpeg" property="og:image" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="themes/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="themes/css/bootstrap-social.css" rel="stylesheet" />
+    <link href="themes/css/style.css" rel="stylesheet" />
+    <link href="themes/css/custom.1.css" rel="stylesheet" />
+    <link href="themes/css/wheel.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.css" />
+
+    <link href="/css/site.css" rel="stylesheet" />
+</head>
+@RenderBody()
+
+<body>
+
+</body>
+<script type="text/javascript" src="https://js.pusher.com/7.0/pusher.min.js" id="pusher-js"></script>
+<script src="/themes/js/wheel.min.js"></script>
+<script src="/themes/js/jquery-1.10.1.min.js"></script>
+<script src="/themes/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/themes/js/bootstrap.min.js"></script>
+<script src="/themes/js/moment.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.js"></script>
+<script src="themes/js/script.js?ver=1"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('.cash-format').each(function (index) {
+            $(this).html(parseInt($(this).text()).toLocaleString('it-IT', {
+                style: 'currency',
+                currency: 'VND'
+            }));
+        });
+        $('button[data-game]').click(function () {
+            let button = $(this);
+            let game = button.attr('data-game');
+            game_active = game;
+            $('.game').removeClass('active');
+            $(`.game[game-tab=${game}]`).addClass('active').removeClass("hidden");
+            $("button[data-game]").removeClass("btn-info").addClass("btn-primary");
+            $("[data-minigame]").removeClass("btn-success");
+            button.removeClass("btn-primary").addClass("btn-info");
+        });
+        $('button[data-minigame]').click(function () {
+            let button = $(this);
+            let game = button.attr('data-minigame');
+            game_active = "minigame";
+            $('.game').removeClass('active');
+            $(`.game[game-tab=${game}]`).addClass('active').removeClass("hidden");
+            $("[data-minigame]").removeClass("btn-success");
+            $("[data-game]").removeClass("btn-success").addClass("btn-primary");
+            button.addClass("btn-success");
+        });
+    });
+</script>
+<style>
+    .jackpot {
+        wiggle 1.3s linear infinite
+    }
+</style>
+
+</html>

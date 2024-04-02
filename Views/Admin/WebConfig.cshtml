@@ -1,0 +1,110 @@
+﻿<div class="container">
+
+    <div class="float-right">
+
+        <span class="btn btn-warning" oncancel="Edit()" id="edit">
+            <i class="fa-solid fa-pen-to-square"></i>
+        </span>
+
+        <span class="btn btn-success" oncancel="Save()" id="save">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </span>
+
+
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-5 m-3">
+            <div class="form-group">
+                <label class="form-label">Box Chat Telegram (username nhóm)</label>
+                <input class="form-control" value="@ViewBag.BoxChatTelegram" id="BoxChatTelegram" />
+            </div>
+        </div>
+
+        <div class="col-5 m-3">
+            <div class="form-group">
+                <label class="form-label">Tên miền thứ 2 (chỉ ghi tên miền)</label>
+                <input class="form-control" value="@ViewBag.Domain2" id="Domain2" />
+            </div>
+        </div>
+
+        <div class="col-5 m-3">
+            <div class="form-group">
+                <label class="form-label">Tên miền thứ 3 (chỉ ghi tên miền)</label>
+                <input class="form-control" value="@ViewBag.Domain3" id="Domain3" />
+            </div>
+        </div>
+
+        <div class="col-5 m-3">
+            <div class="form-group">
+                <label class="form-label">CSKH (username telegram)</label>
+                <input class="form-control" value="@ViewBag.CSKH" id="cskh" />
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<script>
+
+    async function SaveData() {
+        let data1 = new FormData()
+        data1.append("Value", $("#BoxChatTelegram").val())
+        data1.append("KeyName", "BoxChatTelegram")
+        await fetch("/admin_ql_cltxmomo/webconfig", {
+            method: "POST",
+            body: data1
+        })
+        let data2 = new FormData()
+        data2.append("KeyName", "Domain2")
+        data2.append("Value", $("#Domain2").val())
+        await fetch("/admin_ql_cltxmomo/webconfig", {
+            method: "POST",
+            body: data2
+        })
+        let data3 = new FormData()
+        data3.append("KeyName", "Domain3")
+        data3.append("Value", $("#Domain3").val())
+        await fetch("/admin_ql_cltxmomo/webconfig", {
+            method: "POST",
+            body: data3
+        })
+        let data4 = new FormData()
+        data4.append("KeyName", "CSKH")
+        data4.append("Value", $("#cskh").val())
+        await fetch("/admin_ql_cltxmomo/webconfig", {
+            method: "POST",
+            body: data4
+        })
+
+    }
+
+
+    $(document).ready(function () {
+        $("#save").hide();
+        $("input").prop("disabled", true)
+    })
+
+
+    $("#edit").click(function () {
+        $(this).hide();
+        $("#save").show();
+        $("input").prop("disabled", false)
+
+    })
+
+    $("#save").click(function () {
+        $(this).hide();
+        SaveData()
+        $("input").prop("disabled", true)
+        $("#edit").show();
+
+
+    })
+
+
+
+</script>

@@ -1,0 +1,35 @@
+﻿@model cltxmomo.Models.HistoryWin;
+
+<form>
+    <input hidden asp-for="Id" />
+
+    <div class="form-group">
+        <label class="form-label">Số điện thoại</label>
+        <input class="form-control" asp-for="PhoneNumber" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Tiền đặt</label>
+        <input class="form-control" asp-for="Deposit" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Tiền thắng</label>
+        <input class="form-control" asp-for="Received" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Nội dung</label>
+        <input class="form-control" asp-for="Content" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Trạng thái</label>
+        <select class="form-control" asp-for="Status">
+            <option value="win">Thắng</option>
+            <option value="lose">Thua</option>
+        </select>
+    </div>
+
+
+</form>

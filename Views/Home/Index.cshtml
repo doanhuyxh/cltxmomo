@@ -1,0 +1,2251 @@
+﻿
+<input type="hidden" name="main_session">
+<div class="mainbar">
+    <div class="container">
+        <a href="/" class="text-center">
+            <div class="hidden-xs ">
+                <img src="/themes/Gjsz4g7.jpeg" height="120px" alt="Logo" style="max-width: 100%;"
+                     class="animate__animated animate__infinite animate__pulse">
+            </div>
+            <div class="visible-xs ">
+                <img src="themes/Gjsz4g7.jpeg" height="80px" alt="Logo" style="max-width: 100%; object-fit: cover"
+                     class="animate__animated animate__infinite animate__pulse">
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="container">
+    <marquee width="100%" behavior="scroll" style="display: block;
+            position: fixed;
+            bottom: 70 px;
+            left: 15 px;
+            z-index: 1000;
+            cursor: pointer;
+            width: 100%;">
+        <font color="white" style="text-shadow: 0 0 0.2em #ff0000, 0 0 0.2em #ff0000,  0 0 0.2em #ff0000">
+            <b>HÀNH VI SPAM BILL LIÊN TỤC PHÁT HIỆN SẼ GIAM BILL- MỖI BILL CHƠI CÁCH NHAU ÍT NHẤT 15GIÂY</b>
+        </font>
+
+    </marquee>
+    <div class="content">
+        <div class="content-container">
+            <div class="py-5" style="min-height: 80px !important;">
+                <div class="output" id="output">
+                    <h3>
+                        Hệ Thống Mini Game Zalopay Tự Động Siêu Ngon
+                    </h3>
+                    <h4 class="cursor"> Uy Tín, giao dịch tự động 24/7 </h4>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-danger  mt-1" data-toggle="modal"
+                        data-target="#noteModal">
+                    Xem Lưu Ý
+                </button>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary mt-1 btn-lg" data-game="chanle">Chẵn Lẻ</button>
+                <button class="btn btn-default mt-1 btn-lg" data-game="taixiu">Tài xỉu</button>
+                <br />
+                <button class="btn btn-default mt-1" data-game="chanle2">Chẵn Lẻ 2</button>
+
+                <button class="btn btn-default mt-1" data-game="taixiu2">Tài xỉu 2</button>
+
+                <button class="btn btn-default mt-1" data-game="lo">Lô</button>
+
+                <button class="btn btn-default mt-1" data-game="x3">1 phần 3</button>
+
+                <button class="btn btn-default mt-1" data-game="hieu2so">Hiệu</button>
+
+                <button class="btn btn-default mt-1" data-game="xien">Xiên</button>
+
+                <button class="btn btn-default mt-1" data-game="xsmb">XSMB</button>
+
+                <button class="btn btn-default mt-1" data-game="doanso">Đoán số</button>
+            </div>
+            <div class="text-center mt-5" role="group">
+
+                <button class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal"
+                        style="position: relative;">
+                    Nhập CODE Khuyến Mãi
+                    <b class="text-danger"
+                       style="position: absolute; margin-left: auto; margin-right: auto; text-align: center; left: 0px; right: 0px; top: 35px; font-size: 9px;">
+                    </b>
+                </button>
+            </div>
+            <div class="row justify-content-md-center box-cl">
+                <div class="col-md-6 mt-3 cl animate__animated animate__fadeInLeft animate__slow">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading text-center" id="play">
+                            CÁCH CHƠI
+                        </div>
+                        <div class="play-rules">
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="chanle2">
+                                <div class="text-left">
+                                    - <b>Chẵn lẻ 2</b> là một game tính kết quả bằng<b>
+                                        1 số cuối
+                                        mã giao dịch
+                                    </b>.<br>
+                                    <p>- Cách chơi vô cùng đơn giản:</p>
+                                    <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr style="height: 50px">
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>Chẵn 2</b> 50.000. Hãy chuyển số tiền: 500<b>22</b>
+                                    (<b>22</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>Lẻ 2</b> 50.000. Hãy chuyển số tiền: 500<b>21</b>
+                                    (<b>21</b> là MÃ)<br>
+                                    .....
+                                </p>
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white bg-primary">1 Số cuối</th>
+                                                <th class="text-center text-white bg-primary">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">22</span>
+                                                </td>
+                                                <td>
+                                                    <code>0</code> - <code>2</code> - <code>4</code> -
+                                                    <code>6</code> - <code>8</code>
+                                                </td>
+                                                <td><b>x1.92</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">21</span>
+                                                </td>
+                                                <td>
+                                                    <code>1</code> - <code>3</code> - <code>5</code> -
+                                                    <code>7</code> - <code>9</code>
+                                                </td>
+                                                <td><b>x1.92</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center">
+                                    <h4>
+                                        <span class="label label-success">TIỀN THẮNG</span> = <span class="label label-dark">TIỀN CƯỢC</span> x
+                                        <span class="label label-dark">1.92</span>
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="panel-body game active" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="chanle">
+                                <div class="text-left">
+                                    - <b>Chẵn lẻ</b> là một game tính kết quả bằng<b>
+                                        1 số cuối mã giao
+                                        dịch
+                                    </b>.<br>
+                                    <p>- Cách chơi vô cùng đơn giản:</p>
+                                    <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr>
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min VNĐ</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>Chẵn</b> 50.000. Hãy chuyển số tiền: 500<b>12</b>
+                                    (<b>12</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>Lẻ</b> 50.000. Hãy chuyển số tiền: 500<b>11</b>
+                                    (<b>11</b> là MÃ)<br>
+                                    .....
+                                </p>
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white bg-primary">1 Số cuối</th>
+                                                <th class="text-center text-white bg-primary">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">12</span>
+                                                </td>
+                                                <td>
+                                                    <code>2</code> - <code>4</code> - <code>6</code> -
+                                                    <code>8</code>
+                                                </td>
+                                                <td><b>x2</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">11</span>
+                                                </td>
+                                                <td>
+                                                    <code>1</code> - <code>3</code> - <code>5</code> -
+                                                    <code>7</code>
+                                                </td>
+                                                <td><b>x2</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center">
+                                    <h4>
+                                        <span class="label label-success">TIỀN THẮNG</span> = <span class="label label-dark">TIỀN CƯỢC</span> x
+                                        <span class="label label-dark">2</span>
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="taixiu2">
+                                <div class="text-left">
+                                    - <b>Tài Xỉu 2</b> là một game tính kết quả bằng<b>
+                                        1 số cuối
+                                        mã giao dịch
+                                    </b>.<br>
+                                    <p>- Cách chơi vô cùng đơn giản:</p>
+                                    <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr>
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min VNĐ</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>Tài 2</b> 50.000. Hãy chuyển số tiền: 500<b>24</b>
+                                    (<b>24</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>Xỉu 2</b> 50.000. Hãy chuyển số tiền: 500<b>23</b>
+                                    (<b>23</b> là MÃ)<br>
+                                    .....
+                                </p>
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white bg-primary">1 Số cuối</th>
+                                                <th class="text-center text-white bg-primary">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">24</span>
+                                                </td>
+                                                <td>
+                                                    <code>0</code> - <code>3</code> - <code>4</code> -
+                                                    <code>7</code> - <code>8</code>
+                                                </td>
+                                                <td><b>x1.90</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">23</span>
+                                                </td>
+                                                <td>
+                                                    <code>1</code> - <code>2</code> - <code>5</code> -
+                                                    <code>6</code> - <code>9</code>
+                                                </td>
+                                                <td><b>x1.90</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center">
+                                    <h4>
+                                        <span class="label label-success">TIỀN THẮNG</span> = <span class="label label-dark">TIỀN CƯỢC</span> x
+                                        <span class="label label-dark">1.90</span>
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="taixiu">
+                                <div class="text-left">
+                                    - <b>Tài Xỉu</b> là một game tính kết quả bằng<b>
+                                        1 số cuối
+                                        mã giao dịch
+                                    </b>.<br>
+                                    <p>- Cách chơi vô cùng đơn giản:</p>
+                                    <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr>
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min VNĐ</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>Tài</b> 50.000. Hãy chuyển số tiền: 500<b>14</b>
+                                    (<b>14</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>Xỉu</b> 50.000. Hãy chuyển số tiền: 500<b>13</b>
+                                    (<b>13</b> là MÃ)<br>
+                                    .....
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white bg-primary">1 Số cuối</th>
+                                                <th class="text-center text-white bg-primary">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">14</span>
+                                                </td>
+                                                <td>
+                                                    <code>3</code> - <code>4</code> - <code>7</code> -
+                                                    <code>8</code>
+                                                </td>
+                                                <td><b>x2.36</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">13</span>
+                                                </td>
+                                                <td>
+                                                    <code>1</code> - <code>2</code> - <code>5</code> -
+                                                    <code>6</code>
+                                                </td>
+                                                <td><b>x2.36</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center">
+                                    <h4>
+                                        <span class="label label-success">TIỀN THẮNG</span> = <span class="label label-dark">TIỀN CƯỢC</span> x
+                                        <span class="label label-dark">2.36</span>
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="x3">
+                                <div class="text-left">
+                                    - <b>1 Phần 3</b> là một game tính kết quả bằng<b>
+                                        1 số cuối
+                                        mã giao dịch
+                                    </b>.<br>
+                                    <p>- Cách chơi vô cùng đơn giản:</p>
+                                    <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr>
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min VNĐ</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>N1</b> 50.000. Hãy chuyển số tiền: 500<b>41</b>
+                                    (<b>41</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>N2</b> 50.000. Hãy chuyển số tiền: 500<b>42</b>
+                                    (<b>42</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>N3</b> 50.000. Hãy chuyển số tiền: 500<b>43</b>
+                                    (<b>43</b> là MÃ)<br>
+                                    .....
+                                </p>
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center">
+                                        <thead>
+                                            <tr class="bg-primary" role="row">
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white">1 Số cuối</th>
+                                                <th class="text-center text-white">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">50</span>
+                                                </td>
+                                                <td><code>0</code></td>
+                                                <td><b>x3</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">41</span>
+                                                </td>
+                                                <td><code>1</code> - <code>3</code> - <code>8</code></td>
+                                                <td><b>x3</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">42</span>
+                                                </td>
+                                                <td><code>2</code> - <code>5</code> - <code>7</code></td>
+                                                <td><b>x3</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">43</span>
+                                                </td>
+                                                <td><code>4</code> - <code>6</code> - <code>9</code></td>
+                                                <td><b>x3</b></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-left">
+                                    - Nếu mã giao dịch có số cuối trùng với 1 trong 3 số đã chọn,
+                                    bạn sẽ húp.
+                                </div>
+                                <div class="text-center">
+                                    <h4>
+                                        <span class="label label-success">TIỀN THẮNG</span> = <span class="label label-dark">TIỀN CƯỢC</span> x
+                                        <span class="label label-dark">2</span>
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="hieu2so">
+                                <div class="text-left">
+                                    - <b>Hiệu</b> là một game tính kết quả bằng <b>
+                                        hiệu 2 số
+                                        cuối mã giao dịch
+                                    </b> <br>
+                                    <p>- Cách chơi vô cùng đơn giản:</p>
+                                    <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr>
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min VNĐ</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>H3</b> 50.000. Hãy chuyển số tiền: 500<b>25</b>
+                                    (<b>25</b> là MÃ)<br>
+                                    .....
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center">
+                                        <thead>
+                                            <tr class="bg-primary" role="row">
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white">Hiệu 2 Số cuối bằng</th>
+                                                <th class="text-center text-white">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">25</span>
+                                                </td>
+                                                <td><code>9</code></td>
+                                                <td><b>x5</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">25</span>
+                                                </td>
+                                                <td><code>7</code></td>
+                                                <td><b>x4</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">25</span>
+                                                </td>
+                                                <td><code>5</code></td>
+                                                <td><b>x3</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">25</span>
+                                                </td>
+                                                <td><code>3</code></td>
+                                                <td><b>x2</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center">
+                                    <h4>
+                                        <span class="label label-success">TIỀN THẮNG</span> = <span class="label label-dark">TIỀN CƯỢC</span> x
+                                        <span class="label label-dark">2|3|4|5</span>
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="lo">
+                                <div class="text-left">
+                                    -<b>Lô</b> là một game tính kết quả bằng <b>
+                                        2 số cuối mã
+                                        giao dịch
+                                    </b> <br>
+                                    <p>- Cách chơi vô cùng đơn giản:</p>
+                                    <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr>
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min VNĐ</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>LO</b> 50.000. Hãy chuyển số tiền: 500<b>26</b>
+                                    (<b>26</b> là MÃ)<br>
+                                    .....
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center table-responsive">
+                                        <thead>
+                                            <tr class="bg-primary" role="row">
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white">2 Số cuối</th>
+                                                <th class="text-center text-white">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">26</span>
+                                                </td>
+                                                <td>
+                                                    <code>01</code> - <code>03</code> - <code>12</code> -
+                                                    <code>19</code> - <code>23</code> -
+                                                    <code>24</code> - <code>30</code> - <code>33</code> -
+                                                    <code>39</code> - <code>48</code> -
+                                                    <code>54</code> - <code>55</code> -
+                                                    <code>60</code> - <code>61</code> - <code>71</code> -
+                                                    <code>77</code> - <code>81</code> -
+                                                    <code>82</code> - <code>83</code> - <code>67</code> -
+                                                    <code>88</code> - <code>76</code> -
+                                                    <code>64</code> - <code>79</code> -
+                                                    <code>29</code> - <code>99</code>
+                                                </td>
+                                                <td><b>x2</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-left">
+                                    - Nếu mã giao dịch có 2 số cuối trùng với 1 trong các số
+                                    trên, bạn sẽ húp.
+                                </div>
+                                <div class="text-center">
+                                    <h4>
+                                        <span class="label label-success">TIỀN THẮNG</span> = <span class="label label-dark">TIỀN CƯỢC</span> x
+                                        <span class="label label-dark">2</span>
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="gap3">
+                                <p>- Cách chơi vô cùng đơn giản:</p>
+                                <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr>
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min VNĐ</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>G3</b> 50.000. Hãy chuyển số tiền: 500<b>24</b>
+                                    (<b>24</b> là MÃ)<br>
+                                    .....
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center">
+                                        <thead>
+                                            <tr class="bg-primary" role="row">
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white">Các số cuối</th>
+                                                <th class="text-center text-white">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">24</span>
+                                                </td>
+                                                <td>
+                                                    <code>02</code> - <code>13</code> - <code>17</code> -
+                                                    <code>19</code> - <code>21</code> -
+                                                    <code>29</code> - <code>35</code> - <code>37</code> -
+                                                    <code>47</code> - <code>49</code> -
+                                                    <code>51</code> - <code>54</code> -
+                                                    <code>57</code> - <code>63</code> - <code>64</code> -
+                                                    <code>74</code> - <code>83</code> -
+                                                    <code>91</code> - <code>95</code> - <code>96</code>
+                                                </td>
+                                                <td><b>3</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fa-stack">
+                                                        <span class="fa fa-circle fa-stack-2x dot-text-xiu">
+                                                        </span><span class="fa-stack-1x text-white"
+                                                                     id="">24</span>
+                                                    </span>
+                                                </td>
+                                                <td><code>66</code> - <code>99</code></td>
+                                                <td><b>4</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fa-stack">
+                                                        <span class="fa fa-circle fa-stack-2x dot-text-chan">
+                                                        </span><span class="fa-stack-1x text-white"
+                                                                     id="">24</span>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <code>123</code> - <code>234</code> - <code>456</code> -
+                                                    <code>678</code> - <code>789</code>
+                                                </td>
+                                                <td><b>5</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <b>
+                                    - Lưu ý : Mức cược mỗi số khác nhau, nếu chuyển sai hạn mức hoặc sai nội dung vui
+                                    lòng "liên hệ ADMIN" để
+                                    được xử lí
+                                </b>
+                            </div>
+
+
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="xien">
+                                <div class="text-left">
+                                    <p>
+                                        - <b>Xiên</b> là một game tính kết quả bằng <b>1 số cuối mã giao dịch</b>.
+                                    </p>
+                                    <p>- Cách chơi vô cùng đơn giản:</p>
+                                    <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr>
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min VNĐ</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>CX</b> 50.000. Hãy chuyển số tiền: 500<b>60</b>
+                                    (<b>60</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>LT</b> 50.000. Hãy chuyển số tiền: 500<b>61</b>
+                                    (<b>61</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>CT</b> 50.000. Hãy chuyển số tiền: 500<b>62</b>
+                                    (<b>62</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>LX</b> 50.000. Hãy chuyển số tiền: 500<b>63</b>
+                                    (<b>63</b> là MÃ)<br>
+                                    .....
+                                </p>
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center">
+                                        <thead>
+                                            <tr class="bg-primary" role="row">
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white">Các số cuối</th>
+                                                <th class="text-center text-white">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">60</span>
+                                                </td>
+                                                <td><code>0</code> <code>2</code> <code>4</code></td>
+                                                <td><b>x2.75</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label badge-info">61</span></td>
+                                                <td><code>5</code> <code>7</code> <code>9</code></td>
+                                                <td><b>x2.75</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label badge-info">62</span></td>
+                                                <td><code>6</code> <code>8</code></td>
+                                                <td><b>x2.75</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label badge-info">63</span></td>
+                                                <td><code>1</code> <code>3</code></td>
+                                                <td><b>x2.75</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-left">
+                                    - Nếu mã giao dịch có số cuối trùng với 1 trong các số trên,
+                                    bạn sẽ húp.
+                                </div>
+                                <div class="text-center">
+                                    <h4>
+                                        <span class="label label-success">TIỀN THẮNG</span> = <span class="label label-dark">TIỀN CƯỢC</span> x
+                                        <span class="label label-dark">2.75</span>
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="xsmb">
+                                <div class="text-left">
+                                    - <b>XSMB</b> là một game tính kết quả bằng <b>
+                                        2 hoặc mã giao
+                                        dịch
+                                    </b>.<br>
+                                    <p>- Cách chơi vô cùng đơn giản:</p>
+                                    <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr>
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min VNĐ</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>XSMB</b> 50.000. Hãy chuyển số tiền: 500<b>44</b>
+                                    (<b>44</b> là MÃ)<br>
+                                    .....
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center">
+                                        <thead>
+                                            <tr class="bg-primary" role="row">
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white">Các số cuối</th>
+                                                <th class="text-center text-white">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td><span class="label badge-info">44</span></td>
+                                                <td>
+                                                    <code>04</code> - <code>92</code> - <code>74</code> -
+                                                    <code>15</code> - <code>98</code> -
+                                                    <code>59</code> - <code>54</code> - <code>03</code> -
+                                                    <code>87</code> -
+                                                    <code>22</code> - <code>45</code> -
+                                                    <code>80</code> - <code>52</code> - <code>70</code> -
+                                                    <code>46</code> -
+                                                    <code>33</code> - <code>95</code> - <code>20</code>
+                                                </td>
+                                                <td><b>x2</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label badge-info">44</span></td>
+                                                <td>
+                                                    <code>08</code> - <code>79</code> - <code>83</code> -
+                                                    <code>64</code>
+                                                </td>
+                                                <td><b>x4</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label badge-info">44</span></td>
+                                                <td>
+                                                    <code>828</code> - <code>549</code> - <code>323</code> -
+                                                    <code>355</code>
+                                                </td>
+                                                <td><b>x6</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-left">
+                                    - Nếu đuôi mã giao dịch trùng với 1 trong các số trên, bạn sẽ
+                                    húp.
+                                </div>
+                                <div class="text-center">
+                                    <h4>
+                                        <span class="label label-success">TIỀN THẮNG</span> = <span class="label label-dark">TIỀN CƯỢC</span> x
+                                        <span class="label label-dark">2|4|6</span>
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="doanso">
+                                <div class="text-left">
+                                    - <b>Đoán số</b> là một game tính kết quả bằng <b>
+                                        1 số cuối
+                                        mã giao dịch
+                                    </b>.<br>
+                                    <p>- Cách chơi vô cùng đơn giản:</p>
+                                    <p>- Chuyển tiền vào một trong các tài khoản:</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center text-white bg-primary">Số điện thoại</th>
+                                                <th class="text-center text-white bg-primary">Tối thiểu</th>
+                                                <th class="text-center text-white bg-primary">Tối đa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="result-table-10"
+                                               role="alert">
+                                            @foreach (var item in ViewBag.ListPhoneNap)
+                                            {
+                                                <tr>
+                                                    <td id="mm_@item.PhoneNumber">
+                                                        <b id="mln">
+                                                            @item.PhoneNumber <b id="hmln" attr-name="amount" class="hidden">
+                                                                <font color="green">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                            <b id="hmln" class="" attr-name="times">
+                                                                <font color="red">
+                                                                    29.5M
+                                                                </font>/<font color="6861b1">
+                                                                    40M
+                                                                </font>
+                                                            </b>
+                                                        </b>
+                                                        <span class="label label-success text-uppercase"
+                                                              onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+
+                                                    </td>
+                                                    <td>@item.Min VNĐ</td>
+                                                    <td>@item.Max VNĐ</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p id="gameNoti" class="mt-3 flash0">
+                                    <b>KHÔNG CẦN GHI NỘI DUNG</b><br>
+                                    VD: Bạn đặt <b>D0</b> 50.000. Hãy chuyển số tiền: 500<b>70</b>
+                                    (<b>7</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>D1</b> 50.000. Hãy chuyển số tiền: 500<b>71</b>
+                                    (<b>7</b> là MÃ)<br>
+                                    VD: Bạn đặt <b>D2</b> 50.000. Hãy chuyển số tiền: 500<b>72</b>
+                                    (<b>7</b> là MÃ)<br>
+                                    .....
+                                </p>
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover text-center">
+                                        <thead>
+                                            <tr class="bg-primary" role="row">
+                                                <th class="text-center text-white bg-primary">Mã Game</th>
+                                                <th class="text-center text-white">Số cuối</th>
+                                                <th class="text-center text-white">Tỉ lệ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody aria-live="polite" aria-relevant="all" class="" id="result-table"
+                                               role="alert">
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">70</span>
+                                                </td>
+                                                <td><code>0</code></td>
+                                                <td>x<b>1</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">71</span>
+                                                </td>
+                                                <td><code>1</code></td>
+                                                <td>x<b>1</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">72</span>
+                                                </td>
+                                                <td><code>2</code></td>
+                                                <td>x<b>1</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">73</span>
+                                                </td>
+                                                <td><code>3</code></td>
+                                                <td>x<b>1</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">74</span>
+                                                </td>
+                                                <td><code>4</code></td>
+                                                <td>x<b>1</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">75</span>
+                                                </td>
+                                                <td><code>5</code></td>
+                                                <td>x<b>1</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">76</span>
+                                                </td>
+                                                <td><code>6</code></td>
+                                                <td>x<b>1</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">77</span>
+                                                </td>
+                                                <td><code>7</code></td>
+                                                <td>x<b>1</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">78</span>
+                                                </td>
+                                                <td><code>8</code></td>
+                                                <td>x<b>1</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="label badge-info">79</span>
+                                                </td>
+                                                <td><code>9</code></td>
+                                                <td>x<b>1</b></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-left">
+                                    - Nếu mã giao dịch có số cuối trùng với số đã đoán, bạn sẽ
+                                    húp.<br>
+                                </div>
+                                <div class="text-center">
+                                    <h4>
+                                        <span class="label label-success">TIỀN THẮNG</span> = <span class="label label-dark">TIỀN CƯỢC</span> x
+                                        <span class="label label-dark">1</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="minigame-rules">
+                            <script>
+                                function check_Giftcode() {
+                                    let phone = $("#phoneCode").val();
+                                    let code = $("#giftcode").val();
+                                    if (phone.length <= 9) {
+                                        alert('Số điện thoại không hợp lệ');
+                                        return false;
+                                    }
+                                    $("#non_query").hide();
+                                    $("#day_mission_querying").show();
+                                    $.ajax({
+                                        url: 'http://giaitrizalo.net/api/check-gift-code',
+                                        data: {
+                                            phone: phone,
+                                            code: code
+                                        },
+                                        type: 'POST',
+                                        success: function (d) {
+                                            if (d.status != true) {
+                                                alert(d.message);
+                                                $("#non_query").show();
+                                                $("#day_mission_querying").hide();
+                                            } else {
+                                                alert(d.message);
+                                                $("#non_query").show();
+                                                $("#day_mission_querying").hide();
+                                            }
+                                        }
+                                    })
+                                }
+                            </script>
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="diemdanh">
+                                <style>
+                                    #diemDanhCard {
+                                        margin-top: 0.5rem;
+                                        color: #000000;
+                                        border-color: #f5f5f5;
+                                    }
+
+                                    #occard {
+                                        margin-top: 0.5rem;
+                                        color: #000000;
+                                        background-color: #f5f5f5;
+                                        border-color: #f5f5f5;
+                                        padding: 20px;
+                                    }
+
+                                    .occho {
+                                        margin-top: 0.5rem;
+                                        color: #000000;
+                                        background-color: #f5f5f5;
+                                        border-color: #f5f5f5;
+                                        padding: 20px;
+                                    }
+                                </style>
+                                <div class="row collapse show" id="diemDanhCard" style="">
+                                    <div class="col-lg-12">
+                                        <div class="body">
+                                            <div class="text-center">
+                                                <font color="blue">
+                                                    <big><b>Điểm Danh Nhận Quà Miễn Phí</b></big>
+                                                </font>
+                                                <br>
+                                                <small>
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i> Mã quà:
+                                                    <font color="orange"><b id="diemdanh_id">0</b></font>
+                                                </small><br>
+                                                <small>
+                                                    <i class="fa fa-usd" aria-hidden="true"></i> Giá trị: <font color="Maroon">
+                                                        <b id="">
+                                                            5.000 ~
+                                                            100.000
+                                                        </b> vnđ
+                                                    </font>
+                                                </small><br>
+                                                <small>
+                                                    <i class="fa fa-user" aria-hidden="true"></i>: <font color="333366"><b id="diemdanh_user">0</b> người</font>
+                                                </small><br>
+                                                <small>
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i> Quay thưởng
+                                                    sau: <font color="660000">
+                                                        <b id="diemdanh_thoigian">0</b> giây
+                                                    </font>
+                                                </small><br>
+                                                <small>
+                                                    <i class="fa fa-star" aria-hidden="true"></i> Thắng phiên<p id="textLuckOld"> trước</p>:
+                                                </small> <b id="diemdanh_last" class="text-danger font-weight-bold"
+                                                            style="word-break: break-word;">---</b>
+                                                <br>
+                                                <small>
+                                                    <i class="fa fa-bandcamp" aria-hidden="true"></i> Tổng tiền
+                                                    đã trao: <font color="blue">
+                                                        <b id="diemdanh_tongtien">0</b> VNĐ
+                                                    </font>
+                                                </small><br>
+                                                <div class="form-group occard" id="occard">
+                                                    <label for="exampleInputEmail1">Số điện thoại:</label>
+                                                    <input type="text" class="form-control" name="phoneDiemDanh"
+                                                           id="phoneDiemDanh" placeholder="03837755">
+                                                    <small id="emailHelp" class="form-text text-muted">
+                                                        Nhập số điện
+                                                        thoại của bạn để điểm
+                                                        danh.
+                                                    </small>
+                                                    <br>
+                                                    <button class="btn btn-success" data-toggle="modal"
+                                                            data-target="#modalDiemDanh"
+                                                            onclick="DUNGA.joinDiemdanh()">
+                                                        Điểm danh
+                                                    </button>
+                                                </div>
+
+                                                <button class="btn btn-info"
+                                                        onclick="$('#muc_huongdan').show();$('#muc_users').hide();$('#muc_lichsu').hide();">
+                                                    Cách
+                                                    chơi
+                                                </button>
+                                                <button class="btn btn-dark" data-toggle="modal"
+                                                        onclick="$('#muc_huongdan').hide();$('#muc_users').hide();$('#muc_lichsu').show();">
+                                                    Lịch
+                                                    sử
+                                                </button>
+                                                <button class="btn btn-danger"
+                                                        onclick="$('#muc_huongdan').hide();$('#muc_users').show();$('#muc_lichsu').hide();">
+                                                    Danh
+                                                    sách
+                                                </button>
+                                            </div>
+                                            <div class="occho" id="muc_huongdan">
+                                                - Mỗi phiên quà các bạn có 10 phút để điểm danh. <br>
+                                                - Số điện thoại điểm danh phải chơi CLMM.FUN ít nhất 1 lần trong
+                                                ngày. Không giới hạn số lần điểm
+                                                danh trong ngày. <br>
+                                                - Khi hết thời gian, người may mắn sẽ nhận được số tiền của phiên
+                                                đó. <br>
+                                                - Game <b>Điểm danh miễn phí</b> chỉ hoạt động từ <b>7h sáng</b> đến
+                                                1h đêm
+                                            </div>
+
+                                            <div class="occho" id="muc_lichsu" style="display:none;">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped table-bordered table-hover text-center">
+                                                        <thead>
+                                                            <tr role="row" class="bg-primary">
+                                                                <th class="text-center text-white">Mã</th>
+                                                                <th class="text-center text-white">Tổng</th>
+                                                                <th class="text-center text-white">SDT</th>
+                                                                <th class="text-center text-white">VND</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="mayman_log">
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            <div class="occho" id="muc_users" style="display:none;">
+                                                ---
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                setInterval(() => {
+                                    countSeccond();
+                                }, 1000);
+
+                                function countSeccond() {
+                                    var send = Number(diemdanh_thoigian.innerHTML);
+                                    if (send <= 0) {
+                                        return;
+                                    }
+                                    $("#diemdanh_thoigian").text(send - 1);
+                                    $("#diemdanh_time").text(send - 1);
+                                }
+                            </script>
+                            <script src="http://giaitrizalo.net/themes/js/muster.js"></script>
+                            <style>
+                                #day_mission_querying {
+                                    margin-top: 0.5rem;
+                                    color: #155724;
+                                    background-color: #9cbca4;
+                                    border-color: #c3e6cb;
+                                    padding: 20px;
+                                }
+                            </style>
+                            <div class="panel-body game" style="padding-top: 10px; padding-bottom: 20px;"
+                                 game-tab="day_mission">
+                                <div class="body">
+                                    <div class="text-center">
+                                        <font color="blue">
+                                            <big><b>Nhiệm Vụ Ngày</b></big>
+                                        </font>
+                                        <br>
+                                        <div class="form-group" id="non_query"
+                                             style="background-color: rgb(245, 245, 245); border-color: rgb(173, 65, 5); padding: 20px; display: block;">
+                                            <label for="partnerId">Mã định danh:</label> <input type="text"
+                                                                                                class="form-control" name="partnerId" id="partnerId"
+                                                                                                aria-describedby="partnerId" placeholder="094xxxxxxx">
+                                            <small id="partnerId" class="form-text text-muted">
+                                                Nhập Mã định danh
+                                                Zalopay của bạn để kiểm tra và nhận
+                                                thưởng.
+                                            </small> <br>
+                                            <button class="btn btn-success check-day-mission"
+                                                    onclick="check_dayMission()">
+                                                Kiểm Tra
+                                            </button>
+                                            <p>
+                                                Tổng tiền Nhiệm Vụ Ngày đã trao: <b id="total_reward"
+                                                                                    style="color: blue;">0</b>
+                                                <font style="color: blue;">VNĐ</font>
+                                            </p>
+                                        </div>
+                                        <div class="form-group" id="query_done" style="display: none;"></div>
+                                        <div class="form-group bg-warning" id="day_mission_querying"
+                                             style="display: none;">
+                                            Đang truy vấn... xin chờ
+                                            nhé...
+                                        </div>
+                                    </div>
+                                    <div class="day_mission"
+                                         style="background-color: #f5f5f5; border-color: #ad4105; padding: 20px;">
+                                        - Thật tuyệt vời ! Mỗi ngày chỉ cần chơi trên <b class="text-success">
+                                            CLMM.FUN
+                                        </b> chắc chắn bạn
+                                        sẽ nhận được tiền. <br>
+                                        - Khi chơi đủ số tiền (ko cần biết thắng thua) chắc chắn sẽ nhận được tiền.
+                                        <br>
+                                        - Hãy nhập Mã dịnh danh Zalopay của bạn vào mục bên trên để kiểm tra đã chơi
+                                        bao nhiêu nhé.<br>
+                                        - Khi chơi đủ mốc tiền, các bạn ấn vào nhận thưởng để nhận được các mốc như
+                                        sau:
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                        <th class="text-center text-white">Mốc chơi</th>
+                                                        <th class="text-center text-white">Thưởng</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tbody_day_mission">
+                                                    <tr>
+                                                        <td>500,000</td>
+                                                        <td>5,000 đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20,000,000</td>
+                                                        <td>20,000 đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>30,000,000</td>
+                                                        <td>30,000 đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>45,000,000</td>
+                                                        <td>45,000 đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>50,000,000</td>
+                                                        <td>500,000 đ</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                function check_dayMission() {
+                                    let phone = $("#partnerId").val();
+                                    if (phone.length <= 9) {
+                                        alert('Số điện thoại không hợp lệ');
+                                        return false;
+                                    }
+                                    $("#non_query").hide();
+                                    $("#day_mission_querying").show();
+                                    $.ajax({
+                                        url: 'http://giaitrizalo.net/api/check-day-mission',
+                                        data: {
+                                            phone: phone
+                                        },
+                                        type: 'POST',
+                                        success: function (d) {
+                                            if (d.status != true) {
+                                                alert('Oh !! Số điện thoại này chưa chơi game nào, hãy kiểm tra lại');
+                                                $("#non_query").show();
+                                                $("#day_mission_querying").hide();
+                                            } else {
+                                                console.log(d);
+                                                let html = ``;
+                                                html += `Xin chào, <b>` + d.name + `</b>`;
+                                                html += `<div class="progress">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="progress-bar" role="progressbar" style="width: ` + (d.TongTienChoiNgay / d.day * 100) + `%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>`;
+                                                html += `Số tiền đã chơi: <font color="red">` + number_format(d.TongTienChoiNgay) + `</font>`;
+                                                html += `<br>Phần thưởng hiện tại: `;
+                                                if (d.level <= 0) {
+                                                    html += `<br><font color="red">Ngày hôm nay bạn đã nhận hết phần thưởng đợi mai nha</font>`;
+                                                } else {
+                                                    if (parseInt(d.TongTienChoiNgay) >= parseInt(d.day)) {
+                                                        html += ` <font color="red">` + number_format(d.receive) + `</font>. <br>`;
+                                                        html += `<button class="btn btn-success" onclick="NhanQuaNgay()">Nhận Ngay</button><br>`;
+                                                    } else {
+                                                        html += ` <font color="blue">` + number_format(d.receive) + `</font>. <br>`;
+                                                        html += ` <b> hãy chơi đủ thêm <font color="red"> ` + number_format(+d.day - +d.TongTienChoiNgay) + `</font> để nhận quà nhé. <b><br>`;
+                                                    }
+                                                }
+                                                html += '<b id="textloi"></b>';
+                                                html += `<br><button class="btn btn-danger" onclick="$(\'#day_mission_querying\').hide();$(\'#non_query\').show()">Quay lại</button>`;
+                                                $("#day_mission_querying").html(html)
+                                            }
+                                        }
+                                    })
+                                }
+
+                                function NhanQuaNgay() {
+                                    let phone = $("#partnerId").val();
+                                    if (phone.length <= 9) {
+                                        alert('Số điện thoại không hợp lệ');
+                                        return false;
+                                    }
+                                    $("#non_query").hide();
+                                    $("#day_mission_querying").hide();
+                                    $.ajax({
+                                        url: 'http://giaitrizalo.net/api/get-day-mission',
+                                        data: {
+                                            phone: phone
+                                        },
+                                        type: 'POST',
+                                        success: function (d) {
+                                            $("#day_mission_querying").show();
+                                            $("#day_mission_querying").html(d.message);
+                                        }
+                                    })
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 cl animate__animated animate__fadeInRight animate__slow">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading text-center">
+                            KIỂM TRA MÃ GIAO DỊCH
+                        </div>
+
+                        <div class="panel-body text-center">
+
+
+                            <div class="alert alert-info text-center">
+                                Nếu quá 10 phút chưa nhận được tiền vui lòng dán mã vào đây để kiểm tra.
+                            </div>
+                            <div class="text-center">
+                                <div class="form-group">
+                                    <label for="tran_id">Nhập mã giao dịch</label>
+                                    <input type="number" class="form-control" name="tran_id"
+                                           placeholder="Mã giao dịch: Ví dụ 11223344556" pattern="\d{11}"
+                                           title="Vui lòng nhập đúng 11 chữ số!" id="tran_id" required>
+
+                                    <small id="checkHelp" class="form-text text-muted">
+                                        Nhập mã giao dịch đủ số để
+                                        kiểm tra.
+                                    </small>
+                                </div>
+                                <button id="myButton" class="btn btn-primary mb-2 check-tran"
+                                        onclick="toggleAlert()" disabled>
+                                    Kiểm tra
+                                </button>
+
+                                <script>
+                                    let clickCount = 0;
+
+                                    function toggleAlert() {
+                                        clickCount++;
+                                        if (clickCount === 1) {
+                                            alert("Thông báo khi nhấn lần đầu tiên!");
+                                        } else if (clickCount === 2) {
+                                            alert("Thông báo khi nhấn lần thứ hai!");
+                                        } else if (clickCount === 3) {
+                                            alert("Thông báo khi nhấn lần thứ ba!");
+                                        } else {
+                                            alert("Bạn đã nhấn nút quá nhiều lần!");
+                                        }
+                                    }
+
+                                    document.getElementById('tran_id').addEventListener('input', function () {
+                                        let inputValue = this.value;
+                                        let button = document.getElementById('myButton');
+                                        if (inputValue.length !== 11) {
+                                            button.disabled = true;
+                                            button.style.opacity = '0.5'; // Đặt opacity làm mờ nút button
+                                        } else {
+                                            button.disabled = false;
+                                            button.style.opacity = '1'; // Khôi phục opacity của nút button
+                                        }
+                                    });
+                                </script>
+                                <div class="hidden more_infomation">
+                                    <div class="mt-3">
+                                        <small class="form-text text-danger">
+                                            Vui lòng nhập thêm thông tin để kiểm tra:
+                                        </small>
+                                        <input type="text" class="form-control" name="receiver"
+                                               placeholder="Số điện thoại hệ thống">
+                                        <small class="form-text text-muted">
+                                            Số điện thoại của <b class="text-danger">Hệ thống</b> bạn chuyển tiền vào. <b class="text-danger">Không</b> phải số của bạn.
+                                        </small>
+                                    </div>
+                                    <button class="btn btn-primary mb-2 check-tran-2"
+                                            onclick="DUNGA.check_tranid2()">
+                                        Tiếp tục
+                                    </button>
+                                </div>
+                                <div id="result-check" style="margin-top: 5px;">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="alert alert-info text-center">
+                                    Nếu có lỗi, hãy liên hệ các kênh CSKH bên dưới hoặc nhấn vào nút liên hệ góc
+                                    phải
+                                    màn hình để báo lỗi ADMIN
+                                </div>
+                                <div id="contact" class="mt-5">
+                                    <p>
+                                        <a class="text-white" href="https://t.me/@ViewBag.BoxChatTelegram"
+                                           target="_blank">
+                                            <span class="btn btn-success text-uppercase">
+                                                box chat
+                                                telegram
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="https://@ViewBag.Domain2" target="_blank">
+                                            <span class="btn btn-success text-uppercase">
+                                                TÊN MIỀN THỨ 2 ( @ViewBag.Domain2
+                                                )
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="https://@ViewBag.Domain3" target="_blank">
+                                            <span class="btn btn-success text-uppercase">
+                                                TÊN MIỀN THỨ 3 (
+                                                @ViewBag.Domain3 )
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a class="text-white" href="https://t.me/@ViewBag.CSKH" target="_blank">
+                                            <span class="btn btn-success text-uppercase">
+                                                CSKH Xử Lí Bill
+                                                Lỗi
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div id="contact" class="mt-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center panel panel-primary">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel-heading text-center">
+                            TRẠNG THÁI ZALOPAY
+                        </div>
+                        <div class="text-center font-weight-bold m-3">
+                            <b>Lưu ý: Khi đạt 40M sẽ tự đổi số.</b>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover text-center">
+                                <thead>
+                                    <tr class="bg-primary" role="row">
+                                        <th class="text-center text-white">
+                                            Số điện thoại
+                                        </th>
+                                        <th class="text-center text-white">
+                                            Trạng thái
+                                        </th>
+                                        <th class="text-center text-white">
+                                            Giao dịch
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="momo-status">
+                                    @foreach (var item in ViewBag.ListPhoneNap)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @item.PhoneNumber <span class="label label-success text-uppercase"
+                                                                        onclick="DUNGA.coppy('@item.PhoneNumber')">
+                                                    <i class="fa fa-clipboard"
+                                                       aria-hidden="true"></i>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-success text-uppercase">
+                                                    Hoạt
+                                                    động
+                                                </span>
+                                            </td>
+                                            <td><strong><span class="text-danger">Không giới hạn</span></strong></td>
+
+                                        </tr>
+                                    }
+
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center panel panel-primary">
+                <div class="row">
+                    <!-- Các phần HTML và mã JavaScript -->
+                    <!-- Định nghĩa bảng -->
+                    <div class="col-md-12">
+                        <div class="panel-heading text-center">
+                            LỊCH SỬ THẮNG
+                        </div>
+                        <div class="text-center font-weight-bold m-3">
+                            <b>Làm mới sau <span class="text-danger countdown-time">30</span> s</b>
+                        </div>
+                        <table class="table table-striped table-bordered table-hover text-center">
+                            <thead>
+                                <tr class="bg-primary" role="row">
+                                    <th class="text-center text-white">
+                                        Số người chơi
+                                    </th>
+
+                                    <th class="text-center text-white">
+                                        Tiền đặt
+                                    </th>
+                                    <th class="text-center text-white">
+                                        Tiền thắng
+                                    </th>
+                                    <th class="text-center text-white">
+                                        Nội dung
+                                    </th>
+                                    <th class="text-center text-white">
+                                        Trạng thái
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="history">
+                                <tr>
+                                    <td>****4192</td>
+                                    <td>40.011&nbsp;VND</td>
+                                    <td>0&nbsp;VND</td>
+                                    <td><span class="label label-info">11</span></td>
+                                    <td><span class="label label-secondary text-uppercase">Thua</span></td>
+                                </tr>
+
+                        </table>
+
+                        <!-- Script JavaScript -->
+                        <script>
+
+
+                            // Function để cập nhật dữ liệu trong bảng
+                            function updateTableData() {
+
+                                fetch("/Home/HistoryWin")
+                                    .then(res => res.json())
+                                    .then(res => {
+                                        var currentDataSetIndex = 0;
+
+                                        var tableBody = document.getElementById("history");
+                                        tableBody.innerHTML = ""; // Xóa dữ liệu hiện tại trong bảng
+
+                                        // Duyệt qua mảng dữ liệu của lần hiện tại và thêm dữ liệu vào bảng
+                                        res.forEach(function (data) {
+                                            var row = "<tr>" +
+                                                "<td>" + data.player + "</td>" +
+                                                "<td>" + data.bet + "</td>" +
+                                                "<td>" + data.win + "</td>" +
+                                                "<td><span class='label label-info'>" + data.content + "</span></td>" +
+                                                "<td><span class='label label-secondary text-uppercase'>" + data.status + "</span></td>" +
+                                                "</tr>";
+                                            tableBody.innerHTML += row;
+                                        });
+                                    })
+
+
+                            }
+
+                            // Function để cập nhật countdown timer
+                            function updateCountdown() {
+                                var countdownElement = document.querySelector('.countdown-time');
+                                var seconds = parseInt(countdownElement.innerText);
+
+                                if (seconds > 0) {
+                                    seconds--;
+                                } else {
+                                    seconds = 30;
+                                    updateTableData(); // Gọi hàm cập nhật dữ liệu trong bảng khi số đếm về 0
+                                }
+
+                                countdownElement.innerText = seconds;
+                            }
+
+                            // Cập nhật countdown mỗi giây
+                            setInterval(updateCountdown, 1000);
+
+                            // Cập nhật dữ liệu ban đầu
+                            updateTableData();
+                        </script>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mt-5 text-center panel panel-primary">
+                <div class="row">
+                    <!-- Các phần HTML và mã JavaScript -->
+                    <!-- Định nghĩa bảng -->
+                    <div class="col-md-12 mt-3 cl">
+                        <div class="panel-heading text-center">
+                            TOP NGÀY
+                        </div>
+
+                        <table class="table table-striped table-bordered table-hover text-center">
+                            <tr role="row" class="bg-primary">
+                                <th class="text-center text-success">TOP</th>
+                                <th class="text-center text-success">Số điện thoại</th>
+                                <th class="text-center text-success">Số tiền</th>
+                                <th class="text-center text-success">Phần thưởng</th>
+                            </tr>
+
+                            <tbody id="history">
+                                @foreach (var item in ViewBag.TopDay)
+                                {
+                                    <tr>
+
+                                        <td><span id="thuong" class="label label-secondary text-uppercase">@item.Top</span></td>
+                                        <td>@item.PhoneNumber</td>
+                                        <td>
+                                            <span id="thuong"
+                                                  class="label label-secondary text-uppercase">@item.Money</span>
+                                        </td>
+
+                                        <td>
+                                            <span id="thuong"
+                                                  class="label label-secondary text-uppercase">@item.Reward</span>
+                                        </td>
+                                    </tr>
+                                }
+
+
+                        </table>
+                        <div class="text-center">
+                            <b class="text-danger">Phần thưởng TOP sẽ dược trao vào 23:59 cuối ngày .</b>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <div class="mt-5 panel panel-primary">
+    </div>
+
+</div>
+    </div>
+    </div>
+
+<div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="noteModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="noteModalLabel">Thông báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body" id="note_modal">
+                <p>
+                    <span style="color: rgb(53, 152, 219);">
+                        <strong>
+                            CHÀO MỪNG BẠN ĐẾN VỚI HỆ THỐNG GAME
+                            Momo UY TÍN SỐ 1 VN
+                        </strong>
+                    </span>
+                </p>
+                <p>
+                    <span style="color: rgb(53, 152, 219);">
+                        <strong>
+                            web hiện tại có thể truy cập bằng 3 tên
+                            miền:
+                        </strong>
+                    </span>
+                </p>
+                <p><code><strong>https://mmcl.fun</strong></code></p>
+                <h4>
+                    <span style="background-color: rgb(251, 238, 184);">
+                        <strong>
+                            <span style="color: rgb(224, 62, 45);">
+                                <em>
+                                    Lưu ý: Web chỉ trả thưởng đúng số
+                                    zalopay đã giao dịch
+                                </em>
+                            </span>
+                        </strong>
+                    </span>
+                </h4>
+                <ol>
+                    <li>
+                        <h4>
+                            <span style="color: rgb(185, 106, 217);">
+                                <strong>
+                                    &nbsp;Sai nội dung/Quên nội
+                                    dung hoàn 50% gốc
+                                </strong>
+                            </span>
+                        </h4>
+                        <h4>
+                            <span style="color: rgb(185, 106, 217);">
+                                <strong>
+                                    2, Sai hạn mức (Minmax) hoàn
+                                    50% gốc ( dưới 20k ko hoàn lại)
+                                </strong>
+                            </span>
+                        </h4>
+                        <h4>
+                            <span style="color: rgb(185, 106, 217);">
+                                <strong>
+                                    3, Giao dịch vào số full 50 lần
+                                    GD/h hoặc hết hạn mức 40M đã OFF hoàn lại 100% gốc (Tối đa 30p kể từ khi
+                                    số OFF)&nbsp;<br>
+                                </strong>
+                            </span>
+                        </h4>
+                        <h4>
+                            <span style="color: rgb(185, 106, 217);">
+                                <strong>
+                                    4, Tuyệt đối không được đánh
+                                    chồng bill, phải chờ bill trước về tiền rồi mới đánh
+                                    tiếp
+                                </strong>
+                            </span>
+                        </h4>
+                    </li>
+                </ol>
+                <h4>
+                    <em>
+                        <span style="color: rgb(186, 55, 42);">
+                            <strong>
+                                - TẤT CẢ CHỈ ÁP DỤNG VỚI BIL THẮNG và
+                                30P PHÚT KỂ TỪ KHI PHÁT SINH GIAO DỊCH
+                            </strong>
+                        </span>
+                    </em>
+                </h4>
+                <p>
+                    <strong>
+                        &nbsp; &nbsp;MỖI BILL ĐÁNH CÁCH NHAU ÍT NHẤT 15GIÂY ĐỂ TRÁNH NHỮNG TRƯỜNG HỢP
+                        SPAM BILL LIÊN TỤC-HÀNH ĐỘNG SPAM BILL LIÊN TỤC PHÁT HIỆN SẼ BỊ GIAM
+                        BILL<br>
+                    </strong>
+                </p>
+                <h5><strong>Web chỉ hỗ trợ bảo lưu 24h<br></strong></h5>
+                <p>
+                    <span style="background-color: rgb(194, 224, 244);">
+                        <strong>
+                            Kiểm tra kỹ số bạn chơi - hạn
+                            mức của số - nội dung của web - trạng thái số trên web rồi hãy ib báo
+                            lỗi
+                        </strong>
+                    </span>
+                </p>
+                <p>
+                    <span style="background-color: rgb(45, 194, 107);">
+                        <strong>
+                            Khi bạn tắt chú ý này đi, đồng
+                            nghĩa với việc bạn đã đọc và chấp nhận những điều đó !
+                        </strong>
+                    </span>
+                </p>
+                <p><strong>&nbsp;</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đã hiểu</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body" id="note_modal">
+        ...
+    </div>
+
+</div>
+<script>
+    // Function to show the modal when the page loads
+    function showModal() {
+        $('#noteModal').modal('show');
+    }
+
+    // Call the function to show the modal when the page is loaded
+    window.onload = showModal;
+</script>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<div id="player" class="hidden"></div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+
+                <div class="text-center">
+                    <p style="line-height: 0.8;"></p>
+                    <p style="modal-title text-center text-bold text-success"><b>CODE KHUYẾN MẠI</b></p>
+                    <div class="form-group" id="non_query"
+                         style="background-color:#f5f5f5 ; border-color: #ad4105; padding: 20px;">
+                        <label for="partnerId">Mã code:</label>
+                        <input type="text" class="form-control" name="giftcode" id="giftcode"
+                               placeholder="ABCXYZ" />
+                        <label for="partnerId" style="margin-top: 10px;">Số điện thoại:</label>
+                        <input type="text" class="form-control" name="phoneCode" id="phoneCode"
+                               placeholder="094xxxxxxx" />
+                        <small id="partnerId" class="form-text text-muted" style="color: #ff0000">
+                            Nhập số điện
+                            thoại của
+                            bạn để kiểm tra và
+                            nhận
+                            thưởng.
+                        </small> <br />
+                        <button class="btn btn-success check-day-mission" onclick="check_Giftcode()">
+                            Kiểm
+                            Tra
+                        </button>
+                    </div>
+                    <div class="form-group" id="query_done" style="display: none;"></div>
+                    <div class="form-group bg-warning" id="day_mission_querying" style="display: none;">
+                        Vui lòng
+                        chờ...
+                    </div>
+                    <div class="occho" id="muc_huongdan">
+                        1. Một số điện thoại chỉ được nhập 1 mã/ngày. <br>
+                        2. Mã code khuyến mại sẽ tùy vào điều kiện để sử dụng, có thời hạn. <br>
+                        3. Mã code khuyến mại sẽ được cấp theo các chương trình khuyến mại của hệ thống của chúng
+                        tôi. <br>
+                        4. Vui lòng liên hệ chát CSKH để biết thêm chi tết khi bạn nhận được CODE. <br>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-12 text-white ">
+            </div>
+            <center>
+                <img src="themes/Gjsz4g7.jpeg" height="60px" alt="Logo" style="max-width: 100%">
+            </center>
+        </div>
+</footer>
