@@ -86,7 +86,7 @@ namespace cltxmomo
             app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.MapControllers();
             app.MapRazorPages();
