@@ -15,5 +15,6 @@ namespace cltxmomo.Data
         public DbSet<WebConfig> WebConfig { get; set; }
         public DbSet<HistoryWin> HistoryWin { get; set; }
         public DbSet<TopDay> TopDay { get; set; }
+        public DbSet<HistoryWin2> HistoryWin2 { get; set; }
     }
 }

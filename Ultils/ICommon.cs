@@ -2,5 +2,6 @@
 {
     public interface ICommon
     {
+        bool AddHistoryWin();
     }
 }

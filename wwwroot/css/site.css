@@ -79,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
         border-color: #3276b1
     }
 
+
     .btn-secondary .badge {
         color: #ad4105;
         background-color: #fff
@@ -3857,10 +3858,11 @@ main {
         background: #ff2424;
         border-radius: 5px
     }
+     */
     .bg-primary {
         color: #fff ;
         background-color: #ff2424 !important;
-    }*/
+    }
 
 .navbar {
     position: relative;
@@ -3990,7 +3992,7 @@ main {
 /* Đặt màu nền và màu chữ cho tất cả các thẻ <th> */
 th {
     background: #009800 !important;
-    color: #eee;
+    color: #fff !important;
 }
 
 

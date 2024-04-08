@@ -1,6 +1,8 @@
 ﻿using cltxmomo.Data;
 using cltxmomo.Models;
+using cltxmomo.Services;
 using cltxmomo.Ultils;
+using Hangfire;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -29,6 +31,11 @@ namespace cltxmomo
             builder.Services.AddControllersWithViews();
             builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
+            builder.Services.AddMemoryCache();
+            builder.Services.AddHangfire(config =>
+            {
+
+            });
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                    options.UseSqlServer(configuration.GetConnectionString("MSSQL"), sqlServerOptions =>
@@ -70,7 +77,7 @@ namespace cltxmomo
                 options.AccessDeniedPath = "/access-denied";
             });
 
-
+            builder.Services.AddHostedService<AddDataHisotyWinServices>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

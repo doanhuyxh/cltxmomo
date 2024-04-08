@@ -101,7 +101,6 @@ namespace cltxmomo.Controllers
             return Ok(vm);
         }
 
-        [HttpDelete("admin_ql_cltxmomo/delete/historywin")]
         public IActionResult DeleteHistoryWin(int id)
         {
             HistoryWin his = _context.HistoryWin.FirstOrDefault(i => i.Id == id);

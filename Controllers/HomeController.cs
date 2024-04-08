@@ -20,15 +20,20 @@ namespace cltxmomo.Controllers
         {
             ViewBag.ListPhoneNap = _context.RechargePhoneNumber.ToList();
             ViewBag.TopDay = _context.TopDay.ToList();
-            ViewBag.BoxChatTelegram = _context.WebConfig.FirstOrDefault(i => i.KeyName == "BoxChatTelegram").Value;
-            ViewBag.Domain2 = _context.WebConfig.FirstOrDefault(i => i.KeyName == "Domain2").Value;
-            ViewBag.Domain3 = _context.WebConfig.FirstOrDefault(i => i.KeyName == "Domain3").Value;
-            ViewBag.CSKH = _context.WebConfig.FirstOrDefault(i => i.KeyName == "CSKH").Value;
+            ViewBag.BoxChatTelegram = _context.WebConfig.FirstOrDefault(i => i.KeyName == "BoxChatTelegram")?.Value ?? "";
+            ViewBag.Domain2 = _context.WebConfig.FirstOrDefault(i => i.KeyName == "Domain2")?.Value ?? "";
+            ViewBag.Domain3 = _context.WebConfig.FirstOrDefault(i => i.KeyName == "Domain3")?.Value ?? "";
+            ViewBag.CSKH = _context.WebConfig.FirstOrDefault(i => i.KeyName == "CSKH")?.Value ?? "";
             return View();
         }
 
+        // Hành động để lấy dữ liệu lịch sử thắng
         public IActionResult HistoryWin()
         {
+            // Đây là nơi bạn thực hiện logic để lấy dữ liệu lịch sử thắng từ nguồn nào đó,
+            // như cơ sở dữ liệu hoặc bất kỳ nguồn nào khác
+
+            // Ở đây, tôi sẽ trả về một danh sách giả định để minh họa
             var data = from _h in _context.HistoryWin
                        orderby _h.Id descending
                        select new
@@ -40,7 +45,9 @@ namespace cltxmomo.Controllers
                            player = _h.PhoneNumber,
                        };
 
-            return Ok(data);
+            return Ok(data.Take(10));
         }
+
+
     }
 }

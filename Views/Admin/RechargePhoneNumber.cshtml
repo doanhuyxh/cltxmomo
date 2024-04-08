@@ -82,13 +82,16 @@
         })
     }
 
-    function Delete(id) {
-        fetch(`/admin_ql_cltxmomo/RechargePhoneNumber?id=${id}`, {
-            method: "DELETE",
+   
+      function Delete(id) {
+        fetch(`/admin_ql_cltxmomo/delete/RechargePhoneNumber?id=${id}`, {
+
         }).then(res => {
             window.location.reload();
         })
     }
+   
+    
 
     $(document).ready(() => {
         $("#tableBank").DataTable({
