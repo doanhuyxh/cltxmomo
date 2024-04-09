@@ -56,7 +56,7 @@ namespace cltxmomo.Services
 
                     List<HistoryWin> histories = new List<HistoryWin>();
 
-                    for (Int16 i = 0; i < 10; i++)
+                    for (Int16 i = 0; i < 15; i++)
                     {
                         int randomNumber = new Random().Next(100, 401);
 
@@ -70,6 +70,8 @@ namespace cltxmomo.Services
                     }
 
                     dbContext.AddRange(histories);
+                    List<HistoryWin> delete = dbContext.HistoryWin.Take(15).ToList();
+                    dbContext.Remove(delete);
                     dbContext.SaveChanges();
 
                 }
