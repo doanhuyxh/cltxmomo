@@ -78,6 +78,7 @@ namespace cltxmomo
             });
 
             builder.Services.AddHostedService<AddDataHisotyWinServices>();
+            builder.Services.AddHostedService<DeleteDataHisotyWinServices>();
 
             var app = builder.Build();
 
