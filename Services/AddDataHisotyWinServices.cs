@@ -3,7 +3,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using cltxmomo.Ultils; // Chắc chắn rằng namespace này chứa các lớp và phương thức cần thiết
 using cltxmomo.Data;
-using cltxmomo.Models; // Chắc chắn rằng namespace này chứa lớp ApplicationDbContext
+using cltxmomo.Models;
+using System.Text.RegularExpressions; // Chắc chắn rằng namespace này chứa lớp ApplicationDbContext
 
 namespace cltxmomo.Services
 {
@@ -57,16 +58,18 @@ namespace cltxmomo.Services
 
                     for (Int16 i = 0; i < 10; i++)
                     {
+                        int randomNumber = new Random().Next(100, 401);
+
                         HistoryWin win = new HistoryWin();
                         win.Content = new Random().Next(4) switch { 0 => "Tài", 1 => "Xỉu", 2 => "Chẵn", _ => "Lẻ" };
                         win.Status = (new Random()).Next(2) == 0 ? "win" : "lose";
                         win.PhoneNumber = "****" + string.Join("", Enumerable.Range(0, 4).Select(_ => new Random().Next(10)));
-                        win.Deposit = string.Join("", Enumerable.Range(0, 5).Select(_ => new Random().Next(10)));
-                        win.Received = string.Join("", Enumerable.Range(0, 8).Select(_ => new Random().Next(10)));
+                        win.Deposit = randomNumber.ToString();
+                        win.Received = (randomNumber * 2).ToString();
                         histories.Add(win);
                     }
 
-                    dbContext.Add(histories);
+                    dbContext.AddRange(histories);
                     dbContext.SaveChanges();
 
                 }

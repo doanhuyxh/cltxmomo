@@ -100,13 +100,18 @@
 
     function Delete(id) {
         fetch(`/admin_ql_cltxmomo/delete/historywin?id=${id}`, {
-       
+
         }).then(res => {
             window.location.reload();
         })
     }
 
     $(document).ready(() => {
+
+        setInterval(() => {
+            window.location.reload()
+        }, 30000)
+
         $("#tablehis").DataTable({
             searching: true,
             info: false,
