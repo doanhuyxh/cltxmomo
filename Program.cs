@@ -78,6 +78,7 @@ namespace cltxmomo
             });
 
             builder.Services.AddHostedService<AddDataHisotyWinServices>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -56,22 +56,33 @@ namespace cltxmomo.Services
 
                     List<HistoryWin> histories = new List<HistoryWin>();
 
+
                     for (Int16 i = 0; i < 15; i++)
                     {
-                        int randomNumber = new Random().Next(100, 401);
-
+                        Random random = new Random();
+                        int randomNumber = random.Next(10, 100);
+                        string status = (new Random()).Next(2) == 0 ? "win" : "lose";
                         HistoryWin win = new HistoryWin();
                         win.Content = new Random().Next(4) switch { 0 => "Tài", 1 => "Xỉu", 2 => "Chẵn", _ => "Lẻ" };
-                        win.Status = (new Random()).Next(2) == 0 ? "win" : "lose";
+                        win.Status = status;
                         win.PhoneNumber = "****" + string.Join("", Enumerable.Range(0, 4).Select(_ => new Random().Next(10)));
-                        win.Deposit = randomNumber.ToString();
-                        win.Received = (randomNumber * 2).ToString();
+                        win.Deposit = (randomNumber * 1000).ToString();
+
+                        if (status == "lose")
+                        {
+                            win.Received = "0";
+                        }
+                        else
+                        {
+                            win.Received = (randomNumber * 1000 * 2).ToString();
+                        }
+
                         histories.Add(win);
                     }
 
                     dbContext.AddRange(histories);
-                    List<HistoryWin> delete = dbContext.HistoryWin.Take(15).ToList();
-                    dbContext.Remove(delete);
+                    //List<HistoryWin> delete = dbContext.HistoryWin.o.Take(15).ToList();
+                    //dbContext.Remove(delete);
                     dbContext.SaveChanges();
 
                 }
