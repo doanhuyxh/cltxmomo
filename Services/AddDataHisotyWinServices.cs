@@ -61,9 +61,10 @@ namespace cltxmomo.Services
                     {
                         Random random = new Random();
                         int randomNumber = random.Next(10, 100);
+
                         string status = (new Random()).Next(2) == 0 ? "win" : "lose";
                         HistoryWin win = new HistoryWin();
-                        win.Content = new Random().Next(4) switch { 0 => "Tài", 1 => "Xỉu", 2 => "Chẵn", _ => "Lẻ" };
+                        win.Content = new Random().Next(11, 14) switch { 13 => "Tài", 14 => "Xỉu", 12 => "Chẵn", _ => "Lẻ" };
                         win.Status = status;
                         win.PhoneNumber = "****" + string.Join("", Enumerable.Range(0, 4).Select(_ => new Random().Next(10)));
                         win.Deposit = (randomNumber * 1000).ToString();
